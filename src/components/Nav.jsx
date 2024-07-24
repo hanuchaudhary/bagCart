@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import { PiShoppingCartSimpleThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Btns from "./Btns";
 import { BsCart3 } from "react-icons/bs";
-import { TiThMenu } from "react-icons/ti";
 
 
 const Nav = () => {
   const [menu, setMenu] = useState("shop");
 
   return (
-    <div className="sticky mt-2 z-10 opacity-85 bg-black px-5 rounded-full top-0 right-0 left-0 py-4 w-[80%] transition-transform m-auto text-white flex items-center justify-between ">
+    <div className="sticky  mt-2 z-10 opacity-85 bg-black px-5 rounded-full top-0 right-0 left-0 py-4 w-[80%] transition-transform m-auto text-white flex items-center justify-between ">
       <Link
         to={"/"}
         onClick={() => setMenu("shop")}
